@@ -40,3 +40,11 @@ local texting = {"شنو ؟😒","👀","اي؟👀","داشوف👀❤"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
+if (text and text == "تعطيل ردود البوت") then 
+send(msg.chat_id_, msg.id_, 'تم تعطيل الردود')
+database:set(bot_id.."Fun_Bots:"..msg.chat_id_,"true")
+end
+if (text and text == "تفعيل ردود البوت") then 
+send(msg.chat_id_, msg.id_, 'تم تفعيل الردود')
+database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
+end
