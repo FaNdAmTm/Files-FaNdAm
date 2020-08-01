@@ -43,20 +43,11 @@ local texting = {"شنو ؟😒","👀","اي؟👀","داشوف👀❤"}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-
-if text == 'تفعيل ردود البوت' and Manager(msg) then
-database:del(bot_id..'Reply:Status'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'✸∫ تم تفعيل ردود البوت')
-return false
+if (text and text == "تعطيل ردود البوت") then 
+send(msg.chat_id_, msg.id_, 'تم تعطيل')
+database:set(bot_id.."Fun_Bots:"..msg.chat_id_,"true")
 end
-
-if text == 'تعطيل ردود البوت' and Manager(msg) then
-database:set(bot_id..'Reply:Status'..msg.chat_id_,true)
-send(msg.chat_id_, msg.id_,'✸∫ تم تعطيل ردود البوت')
-return false
+if (text and text == "تفعيل ردود البوت") then 
+send(msg.chat_id_, msg.id_, 'تم التفعيل')
+database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-
-end
-return {
-Fandam = Reply
-}
