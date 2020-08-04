@@ -10,9 +10,11 @@ return false
 end
 send(msg.chat_id_, msg.id_,'🧼┇ارسل لي اسم حسابك')
 database:set(bot_id..'Set:Manager:rd'..msg.sender_user_id_..':'..msg.chat_id_,true)
+end
 send(msg.chat_id_, msg.id_,'🧼┇تم حفظ الاسم ✔️
 🧯┇ارسل ايدي حسابك')
 database:set(bot_id..'Set:Manager:rd'..msg.sender_user_id_..':'..msg.chat_id_,true)
+end
 send(msg.chat_id_, msg.id_,'🧼┇تم حفظ ايديك ✔️
 🧬┇ ارسل لي تقييمك كمثال :- 
 
@@ -24,9 +26,11 @@ send(msg.chat_id_, msg.id_,'🧼┇تم حفظ ايديك ✔️
 - ايس 
 - كونكر')
 database:set(bot_id..'Set:Manager:rd'..msg.sender_user_id_..':'..msg.chat_id_,true)
+end
 send(msg.chat_id_, msg.id_,'🧼┇تم حفظ التقييم ✔️
 🧯┇تم حفظ حسابك بالبوت')
 database:set(bot_id..'Set:Manager:rd'..msg.sender_user_id_..':'..msg.chat_id_,true)
+end
 return false 
 end
 if text == 'حذف رد' and Manager(msg) then
