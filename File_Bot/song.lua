@@ -1,4 +1,4 @@
-if text == 'الاغاني' then
+if text == "الاغاني" or text == "اغاني" then
 local help_text = database:get(bot_id..'help11_text')
 Text = [[
 •━━━━━━━━━━━━━•ٴ
