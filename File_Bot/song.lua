@@ -28,8 +28,7 @@ Text = [[
 ٢٤-نصرت وحسين - ذكرياتي وياك
 ٢٥-محمود التركي - توكع ع الجرح
 •━━━━━━━━━━━━━•ٴ
-彡 .[FaNdAm Channel](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg)➢
-]]
+✸∫ ↬[Channel FaNdAm](https://t.me/joinchat/AAAAAFg8rs0j5rOAlZy0pg) 
 send(msg.chat_id_, msg.id_,(help_text or Text)) 
 return false
 end
